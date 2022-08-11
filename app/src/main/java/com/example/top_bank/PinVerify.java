@@ -1,39 +1,56 @@
-package com.example.top_bank.User;
-
-import androidx.appcompat.app.AppCompatActivity;
+package com.example.top_bank;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
-import com.example.top_bank.R;
-import com.example.top_bank.TransactionDone;
+import androidx.appcompat.app.AppCompatActivity;
 
-public class SendMoneyOTP extends AppCompatActivity {
-
+public class PinVerify extends AppCompatActivity {
     private EditText inputCode1, inputCode2, inputCode3, inputCode4, inputCode5, inputCode6;
-
+    TextView textmobile;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_send_money_otp);
+        setContentView(R.layout.activity_pin_verify);
 
-        TextView textmobile = findViewById(R.id.textInputMobile);
-        textmobile.setText(String.format(getIntent().getStringExtra("mobile")));
+        textmobile = findViewById(R.id.textInputMobile1);
+        textmobile.setText(String.format(getIntent().getStringExtra("mobile1")));
 
 
-        inputCode1 = findViewById(R.id.inputCode1);
-        inputCode2 = findViewById(R.id.inputCode2);
-        inputCode3 = findViewById(R.id.inputCode3);
-        inputCode4 = findViewById(R.id.inputCode4);
-        inputCode5 = findViewById(R.id.inputCode5);
-        inputCode6 = findViewById(R.id.inputCode6);
+        inputCode1 = findViewById(R.id.inputCode11);
+        inputCode2 = findViewById(R.id.inputCode22);
+        inputCode3 = findViewById(R.id.inputCode33);
+        inputCode4 = findViewById(R.id.inputCode44);
+        inputCode5 = findViewById(R.id.inputCode55);
+        inputCode6 = findViewById(R.id.inputCode66);
 
         setupOTPInputs();
+
+        Button Pinverify = findViewById(R.id.PinVerify);
+
+        Pinverify.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                String _getUserEnteredPhoneNumber = textmobile.getText().toString().trim();
+                String _PhoneNo = "+265"+_getUserEnteredPhoneNumber;
+
+
+
+                Intent intent = new Intent(getApplicationContext(), OTP.class);
+                intent.putExtra("mobile1",_PhoneNo);
+                startActivity(intent);
+            }
+        });
+
+
+
 
     }
 
@@ -136,9 +153,7 @@ public class SendMoneyOTP extends AppCompatActivity {
 
     }
 
-    public void transactionVerify(View view){
-        startActivity(new Intent(this, TransactionDone.class));
-        overridePendingTransition(R.anim.slide_in_left,android.R.anim.slide_out_right);
 
-    }
+
+
 }

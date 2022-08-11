@@ -120,14 +120,14 @@
 
                             <EditText
                                 android:id="@+id/editTextPassword"
-                                android:layout_height="wrap_content"
                                 android:layout_width="match_parent"
-                                android:textSize="@dimen/newsMoreTextSize"
+                                android:layout_height="wrap_content"
                                 android:backgroundTint="@color/white"
-
                                 android:hint="Description (Optional)"
+
                                 android:inputType="text"
-                                android:maxLines="1" />
+                                android:maxLines="1"
+                                android:textSize="@dimen/newsMoreTextSize" />
                         </com.google.android.material.textfield.TextInputLayout>
 
                         <com.google.android.material.textfield.TextInputLayout

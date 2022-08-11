@@ -15,15 +15,22 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.TOP_BANK">
+        android:theme="@style/Theme.TOP_BANK"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".OTP"
+            android:exported="false" />
+        <activity
+            android:name=".PinVerify"
+            android:exported="false" />
+        <activity
+            android:name=".withdrawal"
+            android:exported="false" />
         <activity
             android:name=".TransactionDone"
             android:exported="false" />
         <activity
             android:name=".TransactionConfirm"
-            android:exported="false" />
-        <activity
-            android:name=".User.SendMoneyOTP"
             android:exported="false" />
         <activity
             android:name=".User.SendMoney"

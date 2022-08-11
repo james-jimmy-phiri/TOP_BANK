@@ -7,6 +7,7 @@
         <entry key="..\:/Users/J/AndroidStudioProjects/TOP_BANK2/app/src/main/res/drawable-v24/backgroundbutton.xml" value="0.1" />
         <entry key="..\:/Users/J/AndroidStudioProjects/TOP_BANK2/app/src/main/res/drawable-v24/ic_add_img.xml" value="0.1" />
         <entry key="..\:/Users/J/AndroidStudioProjects/TOP_BANK2/app/src/main/res/drawable-v24/ic_back_img.xml" value="0.1" />
+        <entry key="..\:/Users/J/AndroidStudioProjects/TOP_BANK2/app/src/main/res/drawable-v24/ic_google_plus.xml" value="0.187" />
         <entry key="..\:/Users/J/AndroidStudioProjects/TOP_BANK2/app/src/main/res/drawable-v24/ic_login_hero.xml" value="0.183" />
         <entry key="..\:/Users/J/AndroidStudioProjects/TOP_BANK2/app/src/main/res/drawable-v24/ic_register_hero.xml" value="0.1" />
         <entry key="..\:/Users/J/AndroidStudioProjects/TOP_BANK2/app/src/main/res/drawable-v24/ic_side_bg.xml" value="0.1" />
@@ -19,10 +20,13 @@
         <entry key="..\:/Users/J/AndroidStudioProjects/TOP_BANK2/app/src/main/res/drawable/transparentbutton.xml" value="0.1" />
         <entry key="..\:/Users/J/AndroidStudioProjects/TOP_BANK2/app/src/main/res/layout/activity_boarding.xml" value="0.25" />
         <entry key="..\:/Users/J/AndroidStudioProjects/TOP_BANK2/app/src/main/res/layout/activity_dashboard_item.xml" value="0.22447916666666667" />
-        <entry key="..\:/Users/J/AndroidStudioProjects/TOP_BANK2/app/src/main/res/layout/activity_login.xml" value="0.22" />
+        <entry key="..\:/Users/J/AndroidStudioProjects/TOP_BANK2/app/src/main/res/layout/activity_login.xml" value="0.39075249320036265" />
         <entry key="..\:/Users/J/AndroidStudioProjects/TOP_BANK2/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/J/AndroidStudioProjects/TOP_BANK2/app/src/main/res/layout/activity_main2.xml" value="0.21041666666666667" />
         <entry key="..\:/Users/J/AndroidStudioProjects/TOP_BANK2/app/src/main/res/layout/activity_on_boarding.xml" value="0.1" />
-        <entry key="..\:/Users/J/AndroidStudioProjects/TOP_BANK2/app/src/main/res/layout/activity_register.xml" value="0.33" />
+        <entry key="..\:/Users/J/AndroidStudioProjects/TOP_BANK2/app/src/main/res/layout/activity_otp.xml" value="0.22447916666666667" />
+        <entry key="..\:/Users/J/AndroidStudioProjects/TOP_BANK2/app/src/main/res/layout/activity_pin_verify.xml" value="0.22447916666666667" />
+        <entry key="..\:/Users/J/AndroidStudioProjects/TOP_BANK2/app/src/main/res/layout/activity_register.xml" value="0.25" />
         <entry key="..\:/Users/J/AndroidStudioProjects/TOP_BANK2/app/src/main/res/layout/activity_send_mone.xml" value="0.22447916666666667" />
         <entry key="..\:/Users/J/AndroidStudioProjects/TOP_BANK2/app/src/main/res/layout/activity_send_money.xml" value="0.25" />
         <entry key="..\:/Users/J/AndroidStudioProjects/TOP_BANK2/app/src/main/res/layout/activity_send_money_otp.xml" value="0.22" />
@@ -30,7 +34,9 @@
         <entry key="..\:/Users/J/AndroidStudioProjects/TOP_BANK2/app/src/main/res/layout/activity_sign_otp.xml" value="0.22" />
         <entry key="..\:/Users/J/AndroidStudioProjects/TOP_BANK2/app/src/main/res/layout/activity_transaction_confirm.xml" value="0.25" />
         <entry key="..\:/Users/J/AndroidStudioProjects/TOP_BANK2/app/src/main/res/layout/activity_transaction_done.xml" value="0.21041666666666667" />
+        <entry key="..\:/Users/J/AndroidStudioProjects/TOP_BANK2/app/src/main/res/layout/activity_transaction_pin.xml" value="0.25" />
         <entry key="..\:/Users/J/AndroidStudioProjects/TOP_BANK2/app/src/main/res/layout/activity_user_dashboard.xml" value="0.1" />
+        <entry key="..\:/Users/J/AndroidStudioProjects/TOP_BANK2/app/src/main/res/layout/activity_withdrawal.xml" value="0.22447916666666667" />
         <entry key="..\:/Users/J/AndroidStudioProjects/TOP_BANK2/app/src/main/res/layout/item_activity.xml" value="0.22447916666666667" />
         <entry key="..\:/Users/J/AndroidStudioProjects/TOP_BANK2/app/src/main/res/layout/partial_action.xml" value="0.33" />
         <entry key="..\:/Users/J/AndroidStudioProjects/TOP_BANK2/app/src/main/res/layout/partial_action2.xml" value="0.22447916666666667" />

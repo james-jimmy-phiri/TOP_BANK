@@ -28,14 +28,14 @@
 
                 <TextView
 
-                    android:layout_height="wrap_content"
                     android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_alignParentLeft="true"
                     android:layout_centerVertical="true"
-                    android:textSize="16sp"
-                    android:textStyle="italic"
                     android:text="Create\nyour first\nTopBank \nAccount "
-                    android:textColor="@color/white" />
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:textStyle="italic" />
 
                 <ImageView
                     android:layout_width="190dp"
@@ -59,29 +59,62 @@
                     android:orientation="vertical">
 
                     <com.google.android.material.textfield.TextInputLayout
-                        android:id="@+id/textInputName"
+                        android:id="@+id/textInputfirstName"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="@dimen/loginViewsMargin">
+                        android:layout_marginTop="@dimen/loginViewsMargin"
+                        app:hintTextColor="@color/black"
+                        android:backgroundTint="@color/white"
+                        app:startIconDrawable="@drawable/person"
+                        app:startIconTint="@color/black">
 
                         <EditText
                             android:layout_height="wrap_content"
                             android:layout_width="match_parent"
-                            android:id="@+id/editTextName"
+                            android:id="@+id/editfirstName"
                             android:textSize="@dimen/newsMoreTextSize"
                             android:textColor="@color/light_black"
                             android:backgroundTint="@color/white"
                             android:paddingLeft="5dp"
-                            android:hint="Name"
+                            android:hint="Firstname"
                             android:inputType="textPersonName"
                             android:maxLines="1" />
                     </com.google.android.material.textfield.TextInputLayout>
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/textInputlastName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/loginViewsMargin"
+                        app:hintTextColor="@color/black"
+                        android:backgroundTint="@color/white"
+                        app:startIconDrawable="@drawable/person"
+                        app:startIconTint="@color/black">
+
+                        <EditText
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:id="@+id/editlastName"
+                            android:textSize="@dimen/newsMoreTextSize"
+                            android:textColor="@color/light_black"
+                            android:backgroundTint="@color/white"
+                            android:paddingLeft="5dp"
+                            android:hint="Lastname"
+                            android:inputType="textPersonName"
+                            android:maxLines="1" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
 
                     <com.google.android.material.textfield.TextInputLayout
                         android:id="@+id/textInputEmail"
                         android:layout_height="wrap_content"
                         android:layout_width="match_parent"
-                        android:layout_marginTop="@dimen/loginViewsMargin">
+                        android:layout_marginTop="@dimen/loginViewsMargin"
+                        app:hintTextColor="@color/black"
+                        android:backgroundTint="@color/white"
+                        app:startIconDrawable="@drawable/email"
+                        app:startIconTint="@color/black">
 
                         <EditText
                             android:id="@+id/editTextEmail"
@@ -95,11 +128,17 @@
                     </com.google.android.material.textfield.TextInputLayout>
 
                     <com.google.android.material.textfield.TextInputLayout
-                        android:id="@+id/textInputMobile"
+                        android:id="@+id/phonenumber"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
 
-                        android:layout_marginTop="@dimen/loginViewsMargin">
+                        android:layout_marginTop="@dimen/loginViewsMargin"
+                        app:hintTextColor="@color/black"
+                        android:backgroundTint="@color/white"
+                        app:startIconDrawable="@drawable/phone"
+                        app:startIconTint="@color/black">
+
+
 
                         <EditText
                             android:layout_height="wrap_content"
@@ -107,8 +146,32 @@
                             android:id="@+id/editTextMobile"
                             android:textSize="@dimen/newsMoreTextSize"
                             android:backgroundTint="@color/white"
-                            android:hint="Mobile Number"
+                            android:maxLength="10"
+                            android:hint="Mobile Number (99xxxxxxx)"
                             android:inputType="phone"
+                            android:maxLines="1" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/textInputAccount"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginTop="@dimen/loginViewsMargin"
+                        app:hintTextColor="@color/black"
+                        android:backgroundTint="@color/white"
+                        app:startIconDrawable="@drawable/ic_baseline_account_circle_24"
+                        app:startIconTint="@color/black">
+
+                        <EditText
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:id="@+id/editAccount"
+                            android:textSize="@dimen/newsMoreTextSize"
+                            android:backgroundTint="@color/white"
+                            android:maxLength="10"
+                            android:hint="Account Number"
+                            android:inputType="number"
                             android:maxLines="1" />
                     </com.google.android.material.textfield.TextInputLayout>
 
@@ -116,7 +179,13 @@
                         android:id="@+id/textInputPassword"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="@dimen/loginViewsMargin">
+                        android:layout_marginTop="@dimen/loginViewsMargin"
+                        app:hintTextColor="@color/black"
+                        android:backgroundTint="@color/white"
+                        app:startIconDrawable="@drawable/password"
+                        app:startIconTint="@color/black"
+                        app:endIconMode="password_toggle"
+                        app:endIconTint="@color/black">
 
                         <EditText
                             android:id="@+id/editTextPassword"
@@ -124,9 +193,9 @@
                             android:layout_width="match_parent"
                             android:textSize="@dimen/newsMoreTextSize"
                             android:backgroundTint="@color/white"
-
+                            android:maxLength="6"
                             android:hint="@string/login_password_hint"
-                            android:inputType="textPassword"
+                            android:inputType="number"
                             android:maxLines="1" />
                     </com.google.android.material.textfield.TextInputLayout>
 
@@ -134,7 +203,13 @@
                         android:id="@+id/textInputPassword2"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="@dimen/loginViewsMargin">
+                        android:layout_marginTop="@dimen/loginViewsMargin"
+                        app:hintTextColor="@color/black"
+                        android:backgroundTint="@color/white"
+                        app:startIconDrawable="@drawable/password"
+                        app:startIconTint="@color/black"
+                        app:endIconMode="password_toggle"
+                        app:endIconTint="@color/black">
 
                         <EditText
                             android:id="@+id/editTextPassword2"
@@ -142,9 +217,9 @@
                             android:layout_width="match_parent"
                             android:textSize="@dimen/newsMoreTextSize"
                             android:backgroundTint="@color/white"
-
-                            android:hint="Confirm Password"
-                            android:inputType="textPassword"
+                            android:maxLength="6"
+                            android:hint="Confirm pin"
+                            android:inputType="number"
                             android:maxLines="1" />
                     </com.google.android.material.textfield.TextInputLayout>
                     <Button
@@ -154,7 +229,7 @@
                         android:layout_marginStart="8dp"
                         android:layout_marginLeft="8dp"
                         android:layout_marginEnd="8dp"
-                        android:layout_marginTop="8dp"
+                        android:layout_marginTop="20dp"
                         android:layout_marginRight="8dp"
                         android:layout_marginBottom="8dp"
                         android:text="Registar"
@@ -218,15 +293,27 @@
                 android:gravity="center">
 
                 <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/ic_facebook" />
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:src="@drawable/tnm" />
 
                 <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
-                    android:src="@drawable/ic_google_plus" />
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="15dp"
+                    android:src="@drawable/airtel" />
+
+                <ImageView
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="15dp"
+                    android:src="@drawable/nb" />
+
+                <ImageView
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="15dp"
+                    android:src="@drawable/standard" />
             </LinearLayout>
 
 

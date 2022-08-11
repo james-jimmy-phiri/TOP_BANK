@@ -7,12 +7,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
-import android.widget.Toast;
 
-import com.example.top_bank.User.RegisterActivity;
 import com.example.top_bank.User.SendMoney;
-import com.example.top_bank.User.SendMoneyOTP;
-import com.example.top_bank.User.SignOtp;
 
 public class TransactionConfirm extends AppCompatActivity {
 
@@ -32,8 +28,8 @@ public class TransactionConfirm extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                Intent intent = new Intent(getApplicationContext(), SendMoneyOTP.class);
-                intent.putExtra("mobile",textmobile.getText().toString());
+                Intent intent = new Intent(getApplicationContext(), PinVerify.class);
+                intent.putExtra("mobile1",textmobile.getText().toString());
                 startActivity(intent);
             }
         });

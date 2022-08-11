@@ -33,7 +33,18 @@
             android:layout_marginTop="8dp"
             android:layout_marginEnd="50dp"
             android:gravity="center"
-            android:text="MWK0 has been successfully sent to mobile number 0991319689"
+            android:text="MWK0 has been successfully sent to mobile number "
+            android:textColor="#434343"
+            android:textSize="16sp"/>
+        <TextView
+            android:id="@+id/TDNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="50dp"
+            android:gravity="center"
+            android:text=""
             android:textColor="#434343"
             android:textSize="16sp"/>
         <com.airbnb.lottie.LottieAnimationView

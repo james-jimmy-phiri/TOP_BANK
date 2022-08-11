@@ -47,65 +47,90 @@
                 android:id="@+id/textInputEmail"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/loginViewsMargin">
+                android:layout_marginTop="@dimen/loginViewsMargin"
+                app:hintTextColor="@color/black"
+                android:backgroundTint="@color/white"
+                app:startIconDrawable="@drawable/person"
+                app:startIconTint="@color/black">
 
                 <EditText
-                    android:layout_height="wrap_content"
-                    android:layout_width="match_parent"
                     android:id="@+id/editTextEmail"
-                    android:textSize="@dimen/newsMoreTextSize"
-                    android:hint="Phone Number"
-                    android:backgroundTint="@color/lightWhite"
-                    android:inputType="textEmailAddress"
-                    android:maxLines="1" />
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/white"
+                    android:hint="Account or Phone Number"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:maxLines="1"
+                    android:textSize="@dimen/newsMoreTextSize" />
             </com.google.android.material.textfield.TextInputLayout>
-
 
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/textInputPassword"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/loginViewsMargin">
+                android:layout_marginTop="@dimen/loginViewsMargin"
+                app:hintTextColor="@color/black"
+                android:backgroundTint="@color/white"
+                app:startIconDrawable="@drawable/password"
+                app:startIconTint="@color/black"
+                app:endIconMode="password_toggle"
+                app:endIconTint="@color/black">
 
                 <EditText
                     android:id="@+id/editTextPassword"
-                    android:textSize="@dimen/newsMoreTextSize"
-                    android:backgroundTint="@color/lightWhite"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:backgroundTint="@color/white"
                     android:hint="@string/login_password_hint"
-                    android:inputType="textPassword"
-                    android:maxLines="1" />
+                    android:inputType="number"
+                    android:maxLength="6"
+                    android:maxLines="1"
+                    android:textSize="@dimen/newsMoreTextSize" />
             </com.google.android.material.textfield.TextInputLayout>
-
-                <Button
-                    android:layout_width="300dp"
-                    android:layout_height="40dp"
-                    android:layout_gravity="center"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginLeft="8dp"
-                    android:layout_marginEnd="8dp"
-                    android:layout_marginTop="25sp"
-                    android:layout_marginRight="8dp"
-                    android:layout_marginBottom="8dp"
-                    android:text="LOGIN"
-                    android:textAlignment="center"
-                    android:onClick="loginButton"
-                    android:textColor="@color/black"
-                    android:textAllCaps="false"
-                    android:background="@drawable/transparentbutton"
-                    />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                >
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/Widget.AppCompat.CompoundButton.CheckBox"
+                    android:text="Remember Me"
+                    android:buttonTint="@color/black"
+                    android:textColor="@color/black"/>
 
 
 
+
+
+            </LinearLayout>
+
+            <Button
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="25sp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/transparentbutton"
+                android:onClick="loginButton"
+                android:text="LOGIN"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@color/black" />
 
 
             <TextView
                 style="@style/viewParent"
                 android:layout_gravity="end"
                 android:layout_marginTop="10dp"
-                android:text="Forgot Password?"
+                android:text="Forgot Pin?"
                 android:textColor="#11CFC5"
                 android:textSize="@dimen/newsMoreTextSize" />
 
@@ -122,8 +147,6 @@
                 android:textStyle="bold" />
 
 
-
-
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -138,12 +161,12 @@
                     android:background="@color/black" />
 
                 <TextView
-                    android:textColor="@color/light_black"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="6"
                     android:text="Use other Methods"
                     android:textAlignment="center"
+                    android:textColor="@color/light_black"
                     android:textSize="12sp" />
 
                 <View
@@ -161,15 +184,27 @@
                 android:gravity="center">
 
                 <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/ic_facebook" />
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:src="@drawable/tnm" />
 
                 <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
-                    android:src="@drawable/ic_google_plus" />
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="15dp"
+                    android:src="@drawable/airtel" />
+
+                <ImageView
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="15dp"
+                    android:src="@drawable/nb" />
+
+                <ImageView
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="15dp"
+                    android:src="@drawable/standard" />
             </LinearLayout>
 
         </LinearLayout>

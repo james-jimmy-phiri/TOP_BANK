@@ -13,8 +13,9 @@ import android.widget.ImageView;
 import com.airbnb.lottie.LottieAnimationView;
 import com.example.top_bank.R;
 
+//splashscreen is inheriting the properties of  AppCompatActivity
 public class SplashScreen extends AppCompatActivity {
-
+    //the 5000 represents 5 seconds
     private static int SPLASH_TIMER =5000;
 
     //variables
@@ -25,10 +26,11 @@ public class SplashScreen extends AppCompatActivity {
     Animation sideAnim,bottomAnim;
 
 
-
+    //default function displaying what should happen once the splashscreen is created
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        //layout of the splashscreen; full screen
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.splash_screen);
 
@@ -43,7 +45,7 @@ public class SplashScreen extends AppCompatActivity {
         //set Animations on elements
         logo.setAnimation(sideAnim);
         loading.setAnimation(bottomAnim);
-
+//creating a new activity(new page)
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
@@ -60,3 +62,4 @@ public class SplashScreen extends AppCompatActivity {
 
     }
 }
+
